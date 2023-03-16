@@ -2,12 +2,12 @@ const reverseString = function(inputWord) {
     // Use a loop from 0 to string length and build a new string using the array methods
     // pop() returns the last element of an array
     let strLen = inputWord.length; // Length of the string.
-    //console.log(strLen);
+    console.log(strLen);
     let arrStr = inputWord.split("");
-    //console.log(arrStr);
+    console.log(arrStr);
     let newStr = [];
     if (strLen === 0) {
-        return ("");
+        newStr = "";
     } else {
         for (let count = 0; count < strLen; count ++) {
             newStr[count] = arrStr.pop();
@@ -16,5 +16,4 @@ const reverseString = function(inputWord) {
     }    
 };
 
-// Do not edit below this line
-module.exports = reverseString;
+console.log(reverseString("Hello!"));
